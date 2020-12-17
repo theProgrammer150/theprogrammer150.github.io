@@ -132,7 +132,7 @@ img {
     width: 45%;
     list-style-type: none;
     align-items: center;
-    color: white;
+    color: white !important;
 }
 
 .menu div {
