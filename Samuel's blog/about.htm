@@ -26,6 +26,24 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
+         <script>
+        const recent = document.getElementById('recent');
+        recent.addEventListener('click', () => {
+            window.location.replace('./recent-posts.htm');
+        });
+
+        function navBar() {
+            const menu = document.querySelector('.menu');
+            const nav = document.querySelector('.header ul');
+
+            menu.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                menu.classList.toggle('toggle');
+            });
+        }
+
+        navBar();
+    </script>
 </body>
 
 </html>
