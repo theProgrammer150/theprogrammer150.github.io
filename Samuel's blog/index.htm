@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Peter's blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <h4>Samuel Peter's blog</h4>
+        </div>
+        <ul>
+            <li><a href="#contact" class="nav-li">Contact me</a></li>
+            <li><a href="about.htm" class="nav-li">About me</a></li>
+            <li><button id="recent" class="btn btn-yellow">Recent posts</button></li>
+        </ul>
+        <div class="menu" style="display: none;">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    <div class="centered">
+        <img src="img/profile_pc.svg" alt="">
+        <div class="text">
+            <h1>Samuel Peter's blog</h1>
+            <h2>Welcome!</h2>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="subscribe">
+                <form action="" method="post">
+                    <input type="text" name="">
+                    <input type="button" value="">
+                </form>
+            </div>
+            <div style="margin-left: 50px;">
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                </ul>
+            </div>
+            <div style="margin-left: 50px;">
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const recent = document.getElementById('recent');
+        recent.addEventListener('click', () => {
+            window.location.replace('./recent-posts.htm');
+        });
+
+        function navBar() {
+            const menu = document.querySelector('.menu');
+            const nav = document.querySelector('.header ul');
+
+            menu.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                menu.classList.toggle('toggle');
+            });
+        }
+
+        navBar();
+    </script>
+</body>
+
+</html>

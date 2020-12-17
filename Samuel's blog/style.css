@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(14, 33, 243);
+}
+
+button,
+input,
+textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.contact-me {
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 20%;
+    margin: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    color: white;
+    outline: 0;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+.btn:focus {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.btn-blue {
+    background-color: #0064fb;
+}
+
+.btn-blue:hover {
+    background-color: #0051ca;
+}
+
+.btn-red {
+    background-color: #fb0060;
+}
+
+.btn-red:hover {
+    background-color: #ba0148;
+}
+
+.btn-yellow {
+    background-color: #ffdd00;
+}
+
+.btn-yellow:hover {
+    background-color: #d9bc00;
+}
+
+.btn-green {
+    background-color: #019a55;
+}
+
+.btn-green:hover {
+    background-color: #007943;
+}
+
+.btn-purple {
+    background-color: #cc00ff;
+}
+
+.btn-purple:hover {
+    background-color: #9f00c6;
+}
+
+.btn-black {
+    background-color: black;
+}
+
+.btn-black:hover {
+    background-color: #272727;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+.header {
+    align-items: center;
+    background-color: rgb(23, 30, 100);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu div {
+    width: 25px;
+    height: 2.5px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-active {
+    transform: translateX(0%) !important;
+}
+
+@media screen and (max-width: 768px) {
+    .header ul {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 4vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        border-left: 1px solid rgba(0, 0, 0, .1);
+        align-items: center;
+        width: 35%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        margin-top: 18.9px;
+        background-color: rgb(23, 30, 100);
+    }
+    .menu {
+        display: block !important;
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+ul li a {
+    color: white;
+}
+
+.nav-li {
+    font: 17px 500 inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* GRID SYSTEM */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
