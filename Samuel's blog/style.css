@@ -199,3 +199,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
 }
+
+.footer {
+    background-color: rgb(23, 30, 100);
+}
