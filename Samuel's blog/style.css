@@ -202,5 +202,5 @@ ul {
 .footer {
     background-color: rgb(23, 30, 100);
     margin-bottom: -200px;
-    color: white;
+    color: white !important;
 }
