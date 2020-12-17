@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(14, 33, 243);
+     color: white;
 }
 
 button,
@@ -132,7 +132,6 @@ img {
     width: 45%;
     list-style-type: none;
     align-items: center;
-    color: white !important;
 }
 
 .menu div {
